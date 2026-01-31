@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Feature Space</title>
 
+  <link rel="icon" href="fs-assets/img/nebula_favicon.jpg" sizes="any">
+  <link rel="apple-touch-icon" href="fs-assets/img/nebula_favicon.jpg">
+
   <style>
     html, body {
       margin: 0;
@@ -33,16 +36,16 @@
 
     /* Content */
     .content {
-      position: relative;
-      height: 100%;
+      position: fixed;
+      inset: 0;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       text-align: center;
       color: white;
       padding: 48px 24px;
-      z-index: 1;
-      transform: translateZ(0);
+      z-index: 10;
+      pointer-events: none;
     }
 
     h1 {
@@ -68,7 +71,7 @@
 
 <body>
   <video id="bgVideo" class="bg" autoplay muted playsinline>
-    <source src="nebula_bg_2.mp4" type="video/mp4">
+    <source src="fs-assets/mov/nebula_bg_loop.mp4" type="video/mp4">
   </video>
 
   <div class="overlay"></div>
