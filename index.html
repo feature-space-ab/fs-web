@@ -33,13 +33,16 @@
 
     /* Content */
     .content {
+      position: relative;
       height: 100%;
       display: flex;
-      align-items: centre;
-      justify-content: centre;
-      text-align: centre;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
       color: white;
-      padding: 24px;
+      padding: 48px 24px;
+      z-index: 1;
+      transform: translateZ(0);
     }
 
     h1 {
@@ -51,20 +54,28 @@
       font-size: 18px;
       max-width: 600px;
     }
+
+
+    .email {
+      font-size: 18px;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+    
+    .email { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   </style>
 </head>
-<body>
 
+<body>
   <video id="bgVideo" class="bg" autoplay muted playsinline>
-    <source src="nebula_bg.mp4" type="video/mp4">
+    <source src="nebula_bg_2.mp4" type="video/mp4">
   </video>
 
   <div class="overlay"></div>
-
+  
   <div class="content">
-    <div>
-      <h1>Welcome</h1>
-      <p>Subtle, living nebula background.</p>
+    <div class="email">
+      hello <span class="at">[at]</span> featurespace.se
     </div>
   </div>
 
@@ -76,9 +87,10 @@
     let lastTime = null;
 
     video.muted = true;
-    video.loop = false;
+    video.loop = true;
     video.playbackRate = SPEED;
 
+    /*
     function animate(timestamp) {
       if (!lastTime) lastTime = timestamp;
       const delta = (timestamp - lastTime) / 1000; // seconds since last frame
@@ -109,7 +121,7 @@
     video.addEventListener("loadedmetadata", () => {
       video.play();
       requestAnimationFrame(animate);
-    });
+    });*/
 </script>
 
 </body>
