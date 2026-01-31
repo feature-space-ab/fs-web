@@ -71,30 +71,46 @@
   <script>
     const video = document.getElementById("bgVideo");
 
-    // How slow should it be?
-    const SPEED = 0.25; // try 0.25 or 0.5
-
+    const SPEED = 0.5; // try 0.25–0.5
     let direction = 1; // 1 = forward, -1 = backward
+    let lastTime = null;
 
+    video.muted = true;
+    video.loop = false;
     video.playbackRate = SPEED;
 
-    video.addEventListener("timeupdate", () => {
-      // If we reach the end, start going backwards
+    function animate(timestamp) {
+      if (!lastTime) lastTime = timestamp;
+      const delta = (timestamp - lastTime) / 1000; // seconds since last frame
+      lastTime = timestamp;
+
+      // Ensure playback never stops
+      if (video.paused) {
+        video.play();
+      }
+
+      // Edge detection
       if (direction === 1 && video.currentTime >= video.duration - 0.05) {
         direction = -1;
       }
 
-      // If we reach the start, go forward again
       if (direction === -1 && video.currentTime <= 0.05) {
         direction = 1;
       }
 
-      // Manually move the video backwards
+      // Smooth reverse motion (time-based!)
       if (direction === -1) {
-        video.currentTime -= 0.03 * SPEED;
+        video.currentTime -= delta * SPEED;
       }
+
+      requestAnimationFrame(animate);
+    }
+
+    video.addEventListener("loadedmetadata", () => {
+      video.play();
+      requestAnimationFrame(animate);
     });
-  </script>
+</script>
 
 </body>
 </html>
