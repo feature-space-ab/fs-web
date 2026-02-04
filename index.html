@@ -1,144 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feature Space</title>
+  <!-- Basics -->
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
 
-  <link rel="icon" href="fs-assets/img/nebula_favicon.jpg" sizes="any">
-  <link rel="apple-touch-icon" href="fs-assets/img/nebula_favicon.jpg">
+  <title>Feature Space — Data, ML & Analytical Consulting</title>
+  <meta
+    name="description"
+    content="Feature Space is a data and machine learning consultancy focused on analytics, modelling and decision-making in high-dimensional spaces."
+  >
 
-  <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      overflow-y: auto;
-    }
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.featurespace.se/" >
 
-    body {
-      min-height: 120vh;
-    }
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="fs-assets/img/logo/icon/icon_colour.svg">
+  <link rel="icon" type="image/png" href="fs-assets/img/logo/icon/icon_colour.png">
+  <link rel="apple-touch-icon" href="fs-assets/img/logo/icon/icon_colour.png" >
 
-    /* Fullscreen background video */
-    video.bg {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
-    /* Dark overlay for readability */
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0);
-      z-index: 1;
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Feature Space" >
+  <meta
+    property="og:description"
+    content="Data and machine learning consultancy focused on analytics, AI and ML modelling."
+  >
+  <meta property="og:type" content="website" >
+  <meta property="og:url" content="https://www.featurespace.se/" >
+  <meta
+    property="og:image"
+    content="https://www.featurespace.se/fs-assets/img/og_img.png"
+  >
 
-    /* Fallback background behind video */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: url("fs-assets/img/nebula_favicon.jpg") center / cover repeat;
-      z-index: -1;
-    }
-
-    /* Content */
-    .content {
-      position: fixed;
-      inset: 0;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 48px 24px;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 12px;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 600px;
-    }
-
-
-    .email {
-      font-size: 24px;
-      opacity: 0.9;
-      letter-spacing: 0.5px;
-    }
-    
-    .email { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css" >
+  <link rel="stylesheet" href="css/layout.css" >
+  <link rel="stylesheet" href="css/branding.css" >
+  <link rel="stylesheet" href="css/motion.css" >
 </head>
 
 <body>
-  <video id="bgVideo" class="bg" autoplay muted playsinline>
-    <source src="fs-assets/mov/nebula_bg_loop.mp4" type="video/mp4">
+  <!-- Semantic anchor for SEO -->
+  <h1 class="sr-only">Feature Space</h1>
+  <p class="sr-only">
+    Feature Space AB, organisation number 559569-9983. All rights reserved.
+  </p>
+
+  <!-- Logo -->
+  <a href="/" class="logo">
+    <img
+      src="fs-assets/img/logo/wide/wide_white.svg"
+      alt="Feature Space"
+      class="logo-full"
+    >
+    <img
+      src="fs-assets/img/logo/compact/compact_white.svg"
+      alt="Feature Space Logo"
+      class="logo-mobile"
+    >
+  </a>
+
+  <!-- Background video enhancement -->
+  <video id="bgVideo" class="bg" autoplay muted playsinline loop>
+    <source src="fs-assets/mov/nebula_bg_loop.mp4" type="video/mp4" >
   </video>
 
+  <!-- Readability overlay -->
   <div class="overlay"></div>
-  
+
+  <!-- Content -->
   <div class="content">
-    <div class="email">
+    <a
+      href="mailto:hello@featurespace.se?subject=Poking%20the%20Model&body=Hi%20there%2C%0A%0AI%20came%20across%20Feature%20Space%20and%20couldn%E2%80%99t%20resist%20poking%20the%20model.%0A%0AIf%20this%20is%20a%20good%20dimension%20to%20connect%20in%2C%20let%E2%80%99s%20talk.%0A%0ABest%2C"
+      class="email"
+    >
       hello <span class="at">[at]</span> featurespace.se
-    </div>
+    </a>
   </div>
 
-  <script>
-    const video = document.getElementById("bgVideo");
-
-    const SPEED = 0.5; // try 0.25–0.5
-    let direction = 1; // 1 = forward, -1 = backward
-    let lastTime = null;
-
-    video.muted = true;
-    video.loop = true;
-    video.playbackRate = SPEED;
-
-    /*
-    function animate(timestamp) {
-      if (!lastTime) lastTime = timestamp;
-      const delta = (timestamp - lastTime) / 1000; // seconds since last frame
-      lastTime = timestamp;
-
-      // Ensure playback never stops
-      if (video.paused) {
-        video.play();
-      }
-
-      // Edge detection
-      if (direction === 1 && video.currentTime >= video.duration - 0.05) {
-        direction = -1;
-      }
-
-      if (direction === -1 && video.currentTime <= 0.05) {
-        direction = 1;
-      }
-
-      // Smooth reverse motion (time-based!)
-      if (direction === -1) {
-        video.currentTime -= delta * SPEED;
-      }
-
-      requestAnimationFrame(animate);
-    }
-
-    video.addEventListener("loadedmetadata", () => {
-      video.play();
-      requestAnimationFrame(animate);
-    });*/
-</script>
-
+  <!-- Scripts -->
+  <script src="js/video.js" defer></script>
 </body>
 </html>

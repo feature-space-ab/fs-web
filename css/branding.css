@@ -1,0 +1,64 @@
+/* Logo container */
+.logo {
+  position: fixed;
+  top: calc(24px + env(safe-area-inset-top));
+  left: calc(24px + env(safe-area-inset-left));
+  z-index: 3;
+}
+
+/* Hide both by default */
+.logo-full,
+.logo-mobile {
+  display: none;
+}
+
+/* Shared logo styling */
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  opacity: 0;
+}
+
+/* Desktop: full logo */
+@media (min-width: 601px) {
+  .logo-full {
+    display: block;
+    height: 64px;
+  }
+}
+
+/* Mobile: icon only */
+@media (max-width: 600px) {
+  .logo-mobile {
+    display: block;
+    height: 56px;
+  }
+}
+
+/* Email */
+.email {
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  color: white;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.email,
+.email:visited,
+.email:active {
+  color: white;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+    .email:hover {
+        opacity: 1;
+        text-decoration: none;
+    }
+}
