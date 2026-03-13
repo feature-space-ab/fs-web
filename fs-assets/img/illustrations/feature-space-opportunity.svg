@@ -1,0 +1,74 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121C2D"/>
+      <stop offset="1" stop-color="#0D1524"/>
+    </linearGradient>
+    <linearGradient id="target" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9CB6EE" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#7E9ADF" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="558" rx="24" fill="url(#bg3)" stroke="#33435E"/>
+
+  <g stroke="#27334C" stroke-width="1" opacity="0.82">
+    <path d="M120 120H780"/>
+    <path d="M120 200H780"/>
+    <path d="M120 280H780"/>
+    <path d="M120 360H780"/>
+    <path d="M120 440H780"/>
+    <path d="M200 80V480"/>
+    <path d="M300 80V480"/>
+    <path d="M400 80V480"/>
+    <path d="M500 80V480"/>
+    <path d="M600 80V480"/>
+    <path d="M700 80V480"/>
+  </g>
+
+  <g stroke="#C7D3E8" stroke-width="2">
+    <path d="M120 480H780"/>
+    <path d="M120 480V80"/>
+  </g>
+
+  <path d="M160 420C245 368 320 338 405 300C500 256 585 220 748 132"
+        stroke="#B8C9EA" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+
+  <path d="M540 170L745 118L700 280L520 315L460 230Z"
+        fill="url(#target)" stroke="#A8BEEB" stroke-width="2.2"/>
+
+  <g fill="#8CA8E8" stroke="#E5ECFA" stroke-width="1.1">
+    <circle cx="190" cy="390" r="8"/>
+    <circle cx="225" cy="365" r="8"/>
+    <circle cx="268" cy="350" r="8"/>
+    <circle cx="302" cy="328" r="8"/>
+    <circle cx="335" cy="316" r="8"/>
+    <circle cx="372" cy="297" r="8"/>
+    <circle cx="420" cy="276" r="8"/>
+    <circle cx="468" cy="255" r="8"/>
+    <circle cx="510" cy="233" r="8"/>
+    <circle cx="560" cy="205" r="8"/>
+    <circle cx="612" cy="182" r="8"/>
+    <circle cx="664" cy="161" r="8"/>
+    <circle cx="715" cy="136" r="8"/>
+  </g>
+
+  <g fill="#E6A184" stroke="#F8E2D8" stroke-width="1.1">
+    <circle cx="220" cy="430" r="7"/>
+    <circle cx="280" cy="410" r="7"/>
+    <circle cx="335" cy="385" r="7"/>
+    <circle cx="390" cy="360" r="7"/>
+    <circle cx="455" cy="335" r="7"/>
+    <circle cx="515" cy="316" r="7"/>
+  </g>
+
+  <g fill="#EAF1FF" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="600">
+    <text x="95" y="72">x2</text>
+    <text x="804" y="492">x1</text>
+    <text x="550" y="150">High-opportunity zone</text>
+  </g>
+
+  <g fill="#C3D0E5" font-family="Space Grotesk, sans-serif" font-size="19" font-weight="500">
+    <text x="144" y="520">Feature space with prioritized target region</text>
+  </g>
+</svg>

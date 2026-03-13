@@ -7,8 +7,8 @@ Static multi-page marketing site for Feature Space.
 - `index.html` - homepage
 - `services.html` - service offerings
 - `work.html` - delivery patterns and mission types
-- `about.html` - approach and collaboration model
 - `contact.html` - contact details and inquiry form
+- `about.html` - deprecated page kept for compatibility
 
 ## Local preview
 
