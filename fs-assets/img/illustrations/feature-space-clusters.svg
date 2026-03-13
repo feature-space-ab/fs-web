@@ -1,0 +1,75 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101A2A"/>
+      <stop offset="1" stop-color="#0C1422"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="558" rx="24" fill="url(#bg2)" stroke="#33425D"/>
+
+  <g stroke="#25324B" stroke-width="1" opacity="0.85">
+    <path d="M120 120H780"/>
+    <path d="M120 200H780"/>
+    <path d="M120 280H780"/>
+    <path d="M120 360H780"/>
+    <path d="M120 440H780"/>
+    <path d="M200 80V480"/>
+    <path d="M300 80V480"/>
+    <path d="M400 80V480"/>
+    <path d="M500 80V480"/>
+    <path d="M600 80V480"/>
+    <path d="M700 80V480"/>
+  </g>
+
+  <g stroke="#C7D3E8" stroke-width="2">
+    <path d="M120 480H780"/>
+    <path d="M120 480V80"/>
+  </g>
+
+  <ellipse cx="260" cy="350" rx="130" ry="90" fill="#6F8FD733" stroke="#87A4EA" stroke-width="2"/>
+  <ellipse cx="450" cy="220" rx="120" ry="84" fill="#E39D7A30" stroke="#E9A07C" stroke-width="2"/>
+  <ellipse cx="640" cy="330" rx="130" ry="94" fill="#8AA6D633" stroke="#A8B9DB" stroke-width="2"/>
+
+  <g fill="#87A4EA" stroke="#DDE6F8" stroke-width="1.1">
+    <circle cx="220" cy="340" r="8"/>
+    <circle cx="280" cy="320" r="8"/>
+    <circle cx="305" cy="365" r="8"/>
+    <circle cx="240" cy="385" r="8"/>
+    <circle cx="190" cy="315" r="8"/>
+    <circle cx="300" cy="300" r="8"/>
+  </g>
+
+  <g fill="#E9A07C" stroke="#F6DDCF" stroke-width="1.1">
+    <circle cx="390" cy="230" r="8"/>
+    <circle cx="430" cy="180" r="8"/>
+    <circle cx="470" cy="220" r="8"/>
+    <circle cx="500" cy="250" r="8"/>
+    <circle cx="445" cy="270" r="8"/>
+    <circle cx="520" cy="205" r="8"/>
+  </g>
+
+  <g fill="#A8B9DB" stroke="#E5ECF9" stroke-width="1.1">
+    <circle cx="590" cy="315" r="8"/>
+    <circle cx="640" cy="280" r="8"/>
+    <circle cx="675" cy="335" r="8"/>
+    <circle cx="715" cy="360" r="8"/>
+    <circle cx="620" cy="380" r="8"/>
+    <circle cx="680" cy="300" r="8"/>
+  </g>
+
+  <g stroke="#EAF1FF" stroke-width="2.4">
+    <path d="M260 332V364"/>
+    <path d="M244 348H276"/>
+    <path d="M450 202V234"/>
+    <path d="M434 218H466"/>
+    <path d="M645 312V344"/>
+    <path d="M629 328H661"/>
+  </g>
+
+  <g fill="#C4D0E5" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="500">
+    <text x="152" y="520">Clustered regions and centroids in feature space</text>
+    <text x="242" y="398">C1</text>
+    <text x="432" y="184">C2</text>
+    <text x="626" y="370">C3</text>
+  </g>
+</svg>

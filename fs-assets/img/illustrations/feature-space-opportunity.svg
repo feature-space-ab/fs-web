@@ -1,0 +1,83 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111A2A"/>
+      <stop offset="1" stop-color="#0C1422"/>
+    </linearGradient>
+    <radialGradient id="peakA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(422 248) rotate(90) scale(40 56)">
+      <stop offset="0" stop-color="#FFF7C9" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFF7C9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="peakB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 258) rotate(90) scale(38 52)">
+      <stop offset="0" stop-color="#FFF2A8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFF2A8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="558" rx="24" fill="url(#bg3d)" stroke="#34445F"/>
+
+  <polygon points="190,430 760,460 620,220 110,195" fill="#101B2B" stroke="#3A4C68" stroke-width="1.6"/>
+
+  <g stroke="#2A3850" stroke-width="1.05" opacity="0.9">
+    <path d="M190 430L760 460"/>
+    <path d="M174 392L736 422"/>
+    <path d="M158 355L712 384"/>
+    <path d="M142 318L688 346"/>
+    <path d="M126 280L664 307"/>
+    <path d="M110 195L620 220"/>
+
+    <path d="M190 430L110 195"/>
+    <path d="M304 436L212 199"/>
+    <path d="M418 442L314 205"/>
+    <path d="M532 448L416 211"/>
+    <path d="M646 454L518 216"/>
+    <path d="M760 460L620 220"/>
+  </g>
+
+  <g stroke="#C9D6EC" stroke-width="2">
+    <path d="M190 430L760 460"/>
+    <path d="M190 430L110 195"/>
+    <path d="M190 430L190 110"/>
+  </g>
+
+  <g opacity="0.97">
+    <path d="M250 405C350 380 500 392 690 430L680 390C500 352 355 340 258 370Z" fill="#B93A1F"/>
+    <path d="M258 370C355 340 500 352 680 390L667 347C505 308 360 300 268 333Z" fill="#D3541D"/>
+    <path d="M268 333C360 300 505 308 667 347L650 305C570 254 515 308 470 270C410 218 350 235 280 296Z" fill="#E9761B"/>
+    <path d="M280 296C350 235 410 218 470 270C515 308 570 254 650 305L634 275C510 238 360 240 294 265Z" fill="#F09B1E"/>
+    <path d="M294 265C360 240 510 238 634 275L615 255C520 224 390 228 310 244Z" fill="#F5C33A"/>
+  </g>
+
+  <ellipse cx="422" cy="248" rx="58" ry="42" fill="url(#peakA)"/>
+  <ellipse cx="560" cy="258" rx="52" ry="38" fill="url(#peakB)"/>
+
+  <g stroke="#1F1F1F" stroke-width="1.05" opacity="0.55">
+    <path d="M250 405C350 380 500 392 690 430"/>
+    <path d="M258 370C355 340 500 352 680 390"/>
+    <path d="M268 333C360 300 505 308 667 347"/>
+    <path d="M280 296C350 235 410 218 470 270C515 308 570 254 650 305"/>
+    <path d="M294 265C360 240 510 238 634 275"/>
+    <path d="M310 244C390 228 520 224 615 255"/>
+
+    <path d="M300 400C306 350 324 302 345 258"/>
+    <path d="M380 398C390 342 402 285 418 242"/>
+    <path d="M465 402C478 344 486 290 500 248"/>
+    <path d="M550 408C560 352 568 304 585 263"/>
+    <path d="M630 417C644 365 650 321 665 285"/>
+  </g>
+
+  <g fill="#EAF1FF" font-family="Space Grotesk, sans-serif" font-size="19" font-weight="600">
+    <text x="178" y="102">x3</text>
+    <text x="86" y="191">x2</text>
+    <text x="772" y="470">x1</text>
+    <text x="505" y="224">High-opportunity ridge</text>
+  </g>
+
+  <g fill="#C4D1E7" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="500">
+    <text x="148" y="520">3D feature space surface with target opportunities</text>
+  </g>
+
+  <g stroke="#EAF1FF" stroke-width="2.2">
+    <circle cx="540" cy="252" r="26"/>
+  </g>
+</svg>

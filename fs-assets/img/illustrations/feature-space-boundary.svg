@@ -1,0 +1,66 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111A29"/>
+      <stop offset="1" stop-color="#0D1422"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="558" rx="24" fill="url(#bg)" stroke="#33415B"/>
+
+  <g stroke="#25314A" stroke-width="1" opacity="0.8">
+    <path d="M110 120H790"/>
+    <path d="M110 180H790"/>
+    <path d="M110 240H790"/>
+    <path d="M110 300H790"/>
+    <path d="M110 360H790"/>
+    <path d="M110 420H790"/>
+    <path d="M170 80V460"/>
+    <path d="M250 80V460"/>
+    <path d="M330 80V460"/>
+    <path d="M410 80V460"/>
+    <path d="M490 80V460"/>
+    <path d="M570 80V460"/>
+    <path d="M650 80V460"/>
+    <path d="M730 80V460"/>
+  </g>
+
+  <g stroke="#C7D3E8" stroke-width="2">
+    <path d="M110 460H790"/>
+    <path d="M110 460V80"/>
+  </g>
+
+  <path d="M150 410C225 335 320 340 390 280C462 220 520 210 580 175C635 144 700 124 760 110"
+        stroke="#A8B9DB" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+
+  <g fill="#87A4EA" stroke="#DDE6F8" stroke-width="1.2">
+    <circle cx="210" cy="180" r="9"/>
+    <circle cx="280" cy="210" r="9"/>
+    <circle cx="340" cy="165" r="9"/>
+    <circle cx="430" cy="150" r="9"/>
+    <circle cx="510" cy="120" r="9"/>
+    <circle cx="570" cy="140" r="9"/>
+    <circle cx="630" cy="100" r="9"/>
+    <circle cx="700" cy="95" r="9"/>
+  </g>
+
+  <g fill="#E9A07C" stroke="#F6DDCF" stroke-width="1.2">
+    <circle cx="190" cy="370" r="9"/>
+    <circle cx="255" cy="350" r="9"/>
+    <circle cx="330" cy="375" r="9"/>
+    <circle cx="405" cy="330" r="9"/>
+    <circle cx="470" cy="295" r="9"/>
+    <circle cx="550" cy="250" r="9"/>
+    <circle cx="620" cy="235" r="9"/>
+    <circle cx="680" cy="215" r="9"/>
+  </g>
+
+  <g fill="#E7EEF9" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600">
+    <text x="94" y="72">x2</text>
+    <text x="804" y="470">x1</text>
+  </g>
+
+  <g fill="#C2CEE3" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="500">
+    <text x="132" y="504">Two classes in feature space</text>
+    <text x="520" y="278">Decision boundary</text>
+  </g>
+</svg>
