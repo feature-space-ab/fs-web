@@ -28,6 +28,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-top: env(safe-area-inset-top);
   backdrop-filter: blur(10px);
   background: rgba(8, 13, 20, 0.78);
   border-bottom: 1px solid rgba(162, 178, 201, 0.26);
