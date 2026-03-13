@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Contact Feature Space | Start a Project</title>
+  <meta
+    name="description"
+    content="Contact Feature Space to discuss analytics, machine learning, and decision intelligence projects."
+  >
+  <link rel="canonical" href="https://www.featurespace.se/contact.html" >
+  <link rel="icon" type="image/svg+xml" href="fs-assets/img/logo/icon/icon_colour.svg" >
+  <link rel="icon" type="image/png" href="fs-assets/img/logo/icon/icon_colour.png" >
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/base.css" >
+  <link rel="stylesheet" href="css/layout.css" >
+  <link rel="stylesheet" href="css/branding.css" >
+  <link rel="stylesheet" href="css/motion.css" >
+</head>
+<body>
+  <h1 class="sr-only">Contact Feature Space</h1>
+
+  <div class="site-bg" aria-hidden="true"></div>
+  <video id="bgVideo" class="nebula-video" autoplay muted playsinline loop>
+    <source src="fs-assets/mov/nebula_bg_loop.mp4" type="video/mp4" >
+  </video>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Feature Space home">
+        <img src="fs-assets/img/logo/wide/wide_white.svg" alt="Feature Space" class="logo-full" >
+        <img src="fs-assets/img/logo/compact/compact_white.svg" alt="Feature Space" class="logo-mobile" >
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="work.html">Work</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="hero" data-reveal>
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 class="page-title">Let us scope the next move.</h2>
+        <p class="lead">
+          Share your challenge and current stack. We will respond with a practical first-step proposal.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-grid" data-reveal>
+      <article class="contact-details">
+        <span class="brand-chip">Direct details</span>
+        <h3>Talk to Feature Space</h3>
+        <ul class="contact-points">
+          <li><strong>Email:</strong> <a class="inline-link" href="mailto:hello@featurespace.se">hello@featurespace.se</a></li>
+          <li><strong>Company:</strong> Feature Space AB</li>
+          <li><strong>Org. number:</strong> 559569-9983</li>
+          <li><strong>Region:</strong> Sweden and remote delivery</li>
+          <li><strong>Typical response:</strong> Within 1-2 business days</li>
+        </ul>
+        <ul class="check-list">
+          <li>Data platform and analytics roadmaps</li>
+          <li>Machine learning implementation and productionization</li>
+          <li>Decision intelligence and process automation</li>
+        </ul>
+      </article>
+
+      <article class="contact-form">
+        <h3>Project inquiry</h3>
+        <p class="section-intro">Submit this form to open a prefilled email draft.</p>
+        <form data-mailto-form>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" >
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" autocomplete="organization" placeholder="Company name" >
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" placeholder="you@company.com" >
+          </label>
+          <label>
+            Project Type
+            <select name="project_type">
+              <option value="">Select one</option>
+              <option value="Analytics engineering">Analytics engineering</option>
+              <option value="ML system implementation">ML system implementation</option>
+              <option value="Forecasting and optimization">Forecasting and optimization</option>
+              <option value="Advisory and architecture">Advisory and architecture</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" placeholder="Describe goals, timeline, and constraints."></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Open email draft</button>
+        </form>
+        <p class="form-note">
+          If you prefer direct outreach, email us at
+          <a class="inline-link" href="mailto:hello@featurespace.se?subject=Feature%20Space%20Inquiry">hello@featurespace.se</a>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Feature Space AB | Org. no. 559569-9983</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+    </div>
+  </footer>
+
+  <script src="js/video.js" defer></script>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

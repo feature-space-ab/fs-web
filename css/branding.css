@@ -1,64 +1,52 @@
-/* Logo container */
 .logo {
-  position: fixed;
-  top: calc(24px + env(safe-area-inset-top));
-  left: calc(24px + env(safe-area-inset-left));
-  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* Hide both by default */
 .logo-full,
 .logo-mobile {
-  display: none;
-}
-
-/* Shared logo styling */
-.logo img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 42px;
   width: auto;
-  opacity: 0;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
 }
 
-/* Desktop: full logo */
-@media (min-width: 601px) {
-  .logo-full {
-    display: block;
-    height: 64px;
-  }
+.logo-mobile {
+  display: none;
+  height: 38px;
 }
 
-/* Mobile: icon only */
+.brand-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(166, 234, 255, 0.42);
+  background: rgba(6, 24, 39, 0.8);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.inline-link {
+  color: #90f6df;
+  text-decoration: underline;
+  text-decoration-color: rgba(144, 246, 223, 0.42);
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  text-decoration-color: rgba(144, 246, 223, 0.82);
+}
+
 @media (max-width: 600px) {
+  .logo-full {
+    display: none;
+  }
+
   .logo-mobile {
     display: block;
-    height: 56px;
   }
-}
-
-/* Email */
-.email {
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  font-size: 24px;
-  letter-spacing: 0.5px;
-  opacity: 0.9;
-  color: white;
-  text-decoration: none;
-  pointer-events: auto;
-}
-
-.email,
-.email:visited,
-.email:active {
-  color: white;
-  text-decoration: none;
-}
-
-@media (hover: hover) {
-    .email:hover {
-        opacity: 1;
-        text-decoration: none;
-    }
 }
