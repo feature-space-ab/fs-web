@@ -24,3 +24,11 @@ Static multi-page marketing site for Feature Space.
 - `css/motion.css` - reveal animations and motion preferences
 - `js/video.js` - background video behavior
 - `js/site.js` - mobile nav, reveal animations, contact form mailto flow
+
+## Loader animation assets
+
+- Output folder: `fs-assets/anim`
+- Generator script: `scripts/create_logo_loader.py`
+- Regenerate:
+  1. Create/activate a Python env with Pillow installed.
+  2. Run `python scripts/create_logo_loader.py`
