@@ -28,6 +28,10 @@ Static multi-page marketing site for Feature Space.
 ## Loader animation assets
 
 - Output folder: `fs-assets/anim`
+- Generated files:
+  - `feature-space-loader.gif` (web fallback)
+  - `feature-space-loader.apng` (animated PNG)
+  - `feature-space-loader.png` (animated PNG with `.png` extension for app assets)
 - Generator script: `scripts/create_logo_loader.py`
 - Regenerate:
   1. Create/activate a Python env with Pillow installed.

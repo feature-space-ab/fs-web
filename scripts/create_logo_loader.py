@@ -75,6 +75,7 @@ def save_outputs(frames: list[Image.Image]) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     gif_path = OUT_DIR / "feature-space-loader.gif"
     apng_path = OUT_DIR / "feature-space-loader.apng"
+    png_path = OUT_DIR / "feature-space-loader.png"
 
     frames[0].save(
         gif_path,
@@ -97,8 +98,21 @@ def save_outputs(frames: list[Image.Image]) -> None:
         format="PNG",
     )
 
+    # Same animation as APNG but saved with .png extension for easier app asset handling.
+    frames[0].save(
+        png_path,
+        save_all=True,
+        append_images=frames[1:],
+        duration=DURATION_MS,
+        loop=0,
+        disposal=2,
+        optimize=False,
+        format="PNG",
+    )
+
     print(f"Wrote: {gif_path}")
     print(f"Wrote: {apng_path}")
+    print(f"Wrote: {png_path}")
 
 
 def main() -> None:
