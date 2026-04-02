@@ -274,7 +274,6 @@
 
 .legal-page .lead,
 .legal-page .section-intro {
-  max-width: 92ch;
   text-wrap: pretty;
 }
 
