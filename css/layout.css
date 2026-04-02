@@ -272,6 +272,17 @@
   max-width: 74ch;
 }
 
+.legal-page .lead,
+.legal-page .section-intro {
+  max-width: 92ch;
+  text-wrap: pretty;
+}
+
+.legal-page .panel p,
+.legal-page .check-list li {
+  text-wrap: pretty;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
