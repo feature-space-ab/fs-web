@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const protectedEmail = [104, 101, 108, 108, 111, 64, 102, 101, 97, 116, 117, 114, 101, 115, 112, 97, 99, 101, 46, 115, 101]
+    .map((code) => String.fromCharCode(code))
+    .join("");
+
+  document.querySelectorAll("[data-protected-email]").forEach((link) => {
+    const subject = (link.dataset.emailSubject || "").toString().trim();
+    const body = (link.dataset.emailBody || "").toString().trim();
+    const params = new URLSearchParams();
+
+    if (subject) params.set("subject", subject);
+    if (body) params.set("body", body);
+
+    const href = params.toString()
+      ? `mailto:${protectedEmail}?${params.toString()}`
+      : `mailto:${protectedEmail}`;
+
+    link.setAttribute("href", href);
+    link.setAttribute("rel", "nofollow");
+  });
+
   const menuButton = document.querySelector(".menu-toggle");
   const nav = document.getElementById("siteNav");
 
@@ -62,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       clean(values.message) || "No details shared yet.",
     ].join("\n");
 
-    const mailto = `mailto:hello@featurespace.se?subject=${encodeURIComponent(
+    const mailto = `mailto:${protectedEmail}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
