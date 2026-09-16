@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var analyticsId = "G-QDDGF2YJVT";
+  var analyticsId = "G-9WL7W8EDJC";
   var language = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
 
   var translations = {
