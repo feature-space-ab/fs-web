@@ -1,0 +1,39 @@
+#stcm-wrapper {
+  --fontFamily: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --primaryColor: var(--brand);
+  --backgroundColor: rgba(10, 16, 25, 0.98);
+  --textColor: var(--text);
+  --backdropBackgroundColor: rgba(0, 0, 0, 0.36);
+  --backdropBackgroundBlur: 8px;
+  --iconColor: #071018;
+  --iconBackgroundColor: var(--brand);
+  --boxShadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+  --borderRadius: 18px;
+  --cc-z-index: 2147483000;
+}
+
+#stcm-wrapper a {
+  color: var(--primaryColor);
+}
+
+.cookie-settings-button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.cookie-settings-button:hover {
+  color: var(--text);
+}
+
+.cookie-settings-button:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
